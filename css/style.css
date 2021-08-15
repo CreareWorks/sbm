@@ -192,7 +192,7 @@ ul {
 /*会社アピール部分*/
 .strength {
   position: relative;
-  background-image: url(/img/strength/strength.jfif);
+  background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/strength/strength.jfif);
   background-size: cover;
   height: 550px;
   margin-top: -15px;
@@ -347,7 +347,7 @@ ul {
   border-top: solid 1px #74c4f3;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  background-image: url(/img/project/cleaning02.jfif);
+  background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/project/cleaning02.jfif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -367,7 +367,7 @@ ul {
   border-top: solid 1px #74c4f3;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  background-image: url(/img/project/facility02.jpg);
+  background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/project/facility02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -387,7 +387,7 @@ ul {
   border-top: solid 1px #74c4f3;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  background-image: url(/img/project/security02.jpg);
+  background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/project/security02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -407,7 +407,7 @@ ul {
   border-top: solid 1px #74c4f3;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  background-image: url(/img/project/architecture02.jpg);
+  background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/project/architecture02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -427,7 +427,7 @@ ul {
   border-top: solid 1px #74c4f3;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  background-image: url(/img/project/reception02.jpg);
+  background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/project/reception02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -527,12 +527,12 @@ ul {
 }
 
 .slick-next:before {
-  background: url(/img/allow_icon/allow_right.png) !important;
+  background: url(https://github.com/CreareWorks/sbm/blob/main/img/allow_icon/allow_right.png) !important;
   background-size: contain !important;
 }
 
 .slick-prev:before {
-  background: url(/img/allow_icon/allow_left.png) !important;
+  background: url(https://github.com/CreareWorks/sbm/blob/main/img/allow_icon/allow_left.png) !important;
   background-size: contain !important;
 }
 
