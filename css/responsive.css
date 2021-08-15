@@ -219,25 +219,25 @@
     animation: anime 30s linear 0s infinite;
   }
   .mainvisual-image li:nth-child(1) {
-    background-image: url(/img/main/security01.jpg);
+    background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/main/security01.jpg);
   }
   .mainvisual-image li:nth-child(2) {
-    background-image: url(/img/main/facility01.jpg);
+    background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/main/facility01.jpg);
     -webkit-animation-delay: 5s;
     animation-delay: 5s;
   }
   .mainvisual-image li:nth-child(3) {
-    background-image: url(/img/main/cleaning01.jfif);
+    background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/main/cleaning01.jfif);
     -webkit-animation-delay: 10s;
     animation-delay: 10s;
   }
   .mainvisual-image li:nth-child(4) {
-    background-image: url(/img/main/architecture01.jpg);
+    background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/main/architecture01.jpg);
     -webkit-animation-delay: 20s;
     animation-delay: 20s;
   }
   .mainvisual-image li:nth-child(5) {
-    background-image: url(/img/main/reception01.jpg);
+    background-image: url(https://github.com/CreareWorks/sbm/blob/main/img/main/reception01.jpg);
     -webkit-animation-delay: 30s;
     animation-delay: 30s;
   }
