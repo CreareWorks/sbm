@@ -1,0 +1,62 @@
+@import "config";
+@import "contactbtn";
+
+.header{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background:linear-gradient(to right,#b8e0dd,#476deb);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+    &-inner{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            height: 90px;
+            width: auto;
+            padding-top: 9px;
+            padding-left: 10px;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+    &-ttl{
+        font-size: 20px;
+        margin-right: auto;
+        a{
+            color: $txt-color;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+    }
+    &-nav{
+        ul{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            width: 100%;
+            padding-left: 0;
+            li{
+                padding: 0 15px;
+                &:hover {
+                    opacity: 0.6;
+                }
+                a{
+                    color: $txt-color;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    &-btn{
+        margin: 0 20px;
+    }
+}

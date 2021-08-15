@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/*--ヘッダー全体--*/
+.main {
+  margin-top: -17px;
+}
+
+.nav-hbg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 60px;
+}
+
+.nav-hbg a {
+  margin-left: 5%;
+}
+
+.nav-hbg a img {
+  height: 80px;
+  padding-top: 10px;
+  margin-left: -25px;
+  width: auto;
+}
+
+.nav-hbg a img:hover {
+  opacity: 0.6;
+}
+
+/*--ハンバーガーメニュー(ヘッダー)--*/
+@media screen and (max-width: 917px) {
+  header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 916px) {
+  .nav-hbg {
+    display: none;
+  }
+  .nav-menu-ul {
+    display: none;
+  }
+}
+
+.nav-toggle {
+  display: block;
+  position: relative;
+  width: 1.75rem;
+  height: 1.5rem;
+  margin-right: 5%;
+}
+
+.nav-toggle i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(189, 189, 189, 0.829);
+  position: absolute;
+  -webkit-transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, -webkit-transform .5s;
+  transition: transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s, -webkit-transform .5s;
+}
+
+.nav-toggle i:nth-child(1) {
+  top: 0;
+}
+
+.nav-toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.nav-toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+.nav-toggle.show i:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+          transform: translateY(10px) rotate(-45deg);
+}
+
+.nav-toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.show i:nth-child(3) {
+  -webkit-transform: translateY(-12px) rotate(45deg);
+          transform: translateY(-12px) rotate(45deg);
+}
+
+.nav {
+  position: absolute;
+  position: fixed;
+  top: 59px;
+  z-index: 99999;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility .5s;
+  transition: opacity .5s, visibility .5s;
+  height: auto;
+  width: 100%;
+}
+
+.nav ul {
+  background-color: #2b3035;
+  margin: 0;
+  padding: 0;
+  height: 385px;
+  opacity: 0.9;
+}
+
+.nav ul a {
+  color: white;
+}
+
+.nav ul a li {
+  text-align: center;
+  padding: 20px;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 0.5px;
+}
+
+.nav ul a li:hover {
+  opacity: 0.3;
+}
+
+.nav.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*--メイン画面--*/
+@media screen and (max-width: 665px) {
+  .main {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 666px) {
+  .main-visual {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 664px) {
+  .mainvisual {
+    position: relative;
+  }
+  .jump {
+    position: absolute;
+    z-index: 9999999;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+  }
+  .jump-button {
+    width: 80px;
+    font-size: 30px;
+    color: #d8d8d8;
+    background-color: #608b92;
+    border-radius: 100px;
+  }
+  .jump-button:hover {
+    opacity: 0.5;
+  }
+  .jump-txt {
+    font-size: 14px;
+    color: rgba(199, 199, 199, 0.521);
+  }
+  .jump-txt:hover {
+    opacity: 0.5;
+  }
+  .main-copy2 {
+    z-index: 100;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+    color: white;
+  }
+  .mainvisual-image {
+    position: relative;
+    display: block;
+    height: 770px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  .mainvisual-image li {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    -webkit-animation: anime 30s linear 0s infinite;
+    animation: anime 30s linear 0s infinite;
+  }
+  .mainvisual-image li:nth-child(1) {
+    background-image: url(/img/main/security01.jpg);
+  }
+  .mainvisual-image li:nth-child(2) {
+    background-image: url(/img/main/facility01.jpg);
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+  .mainvisual-image li:nth-child(3) {
+    background-image: url(/img/main/cleaning01.jfif);
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+  .mainvisual-image li:nth-child(4) {
+    background-image: url(/img/main/architecture01.jpg);
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+  }
+  .mainvisual-image li:nth-child(5) {
+    background-image: url(/img/main/reception01.jpg);
+    -webkit-animation-delay: 30s;
+    animation-delay: 30s;
+  }
+  @-webkit-keyframes anime {
+    0% {
+      -webkit-animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes anime {
+    0% {
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+/*--強み--*/
+@media screen and (max-width: 899px) {
+  .strength-pcsize {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .strength-inner h2 {
+    font-size: 24px;
+  }
+  .strength-inner p {
+    font-size: 14.5px;
+  }
+}
+
+/*--お知らせ--*/
+@media screen and (max-width: 900px) {
+  .news-pcsize {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .news-ssize {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .news-ssize-ttl {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .news-ssize a {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .news-ssize dl {
+    margin: 0 2%;
+  }
+  .news-ssize dt {
+    margin: 0;
+  }
+  .news-ssize dd {
+    margin: 0;
+    font-size: 13px;
+  }
+  .news-ssize p {
+    margin: 0 auto;
+    margin-top: 7%;
+  }
+  .news-txt {
+    padding-left: 10px;
+  }
+}
+
+/*--事業紹介--*/
+@media screen and (max-width: 675px) {
+  .project-ttl {
+    padding: 20px 0;
+    font-size: 27px;
+  }
+  .project h3 {
+    font-size: 24px;
+    left: 5%;
+  }
+  .project-subttl {
+    font-size: 8px;
+    margin-top: -3px;
+    left: 5.5%;
+  }
+  .project-p {
+    font-size: 12px;
+    padding-right: 5px;
+    left: 5%;
+  }
+  .project-cleaning {
+    height: 300px;
+  }
+  .project-facility {
+    height: 300px;
+  }
+  .project-security {
+    height: 300px;
+  }
+  .project-architecture {
+    height: 300px;
+  }
+  .project-reception {
+    height: 300px;
+  }
+}
+
+/*--受託実績--*/
+@media screen and (max-width: 585px) {
+  .resulut-ttl {
+    font-size: 27px;
+  }
+  .resulut figure img {
+    width: 490px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .resulut-ttl {
+    font-size: 27px;
+  }
+  .resulut figure img {
+    width: 300px;
+  }
+}
+
+/*--受託実績ボタン--*/
+@media screen and (max-width: 665px) {
+  .resulut-inner p {
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+}
+
+/*--会社情報--*/
+@media screen and (max-width: 570px) {
+  .info-ttl {
+    font-size: 27px;
+  }
+  .info th {
+    display: block;
+    padding: 5px;
+    margin: 0 5%;
+  }
+  .info td {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0 5%;
+    border-top: none;
+    border-bottom: none;
+  }
+  td.info-last {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/*--お問い合わせ--*/
+@media screen and (max-width: 480px) {
+  .contact-ttl {
+    font-size: 27px;
+  }
+  .contact input.inputs {
+    width: 315px;
+  }
+  .contact .item select {
+    width: 335px;
+  }
+  .contact .item textarea {
+    width: 315px;
+  }
+}
+
+/*--フッター--*/
+@media screen and (max-width: 720px) {
+  .footer-nav ul {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 3% 0;
+    font-size: 8px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,16 @@
+@import "config";
+
+.contact-btn {
+    width: 120px;
+    height: 35px;
+    background: $btn-color;
+    color: #fff;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    &:hover {
+    opacity: 0.6;
+    }
+}

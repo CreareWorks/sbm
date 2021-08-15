@@ -1,0 +1,97 @@
+/*--入力内容確認画面--*/
+body{
+    background-color: #e9eff1;
+    margin: 0;
+    padding: 0;
+}
+
+.confirm{
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.confirmation-screen{
+    margin-top: 50px;
+}
+.confirmation-screen,.verification{
+    text-align: center;
+}
+
+form{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+table{
+    width: 980px;
+    height: auto;
+    padding: 30px;
+    border: none;
+    table-layout: fixed;
+    word-break: break-all;
+}
+
+td{
+    padding: 20px;
+    border: none;
+    border-bottom: solid;
+    border-width: 0.5px;
+    border-color: rgba(0, 0, 0, 0.288);
+}
+
+.item{
+    width: 30%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.item-txt{
+    width: 60%;
+}
+
+.submit-inner{
+    width: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"]{
+    background: #507ee0;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+}
+
+/*--以下、レスポンシヴ用プロパティ--*/
+@media screen and (max-width: 930px){
+
+    table{
+        padding: 0;
+    }
+    .item{
+        display: block;
+        text-align: center;
+        height: 20%;
+        width: 100vw;
+        padding: 0;
+        margin: 0 calc(50% -50vw);
+        border: none;
+        border-radius: 50px;
+        background-color: rgba(214, 214, 214, 0.89);
+    }
+    .item-txt{
+        display: block;
+        text-align: center;
+        height: 80%;
+        width: 100vw;
+        padding: 20px 0;
+        margin: 0 calc(50% -50vw);
+        border: none;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}

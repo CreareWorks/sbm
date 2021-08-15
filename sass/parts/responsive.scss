@@ -1,0 +1,444 @@
+/*--ヘッダー全体--*/
+.main{
+    margin-top: -17px;
+}
+.nav-hbg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 60px;
+
+    a{
+        margin-left: 5%;
+        img{
+        height: 80px;
+        padding-top: 10px;
+        margin-left: -25px;
+        width: auto;
+        &:hover {
+            opacity: 0.6;
+            }
+        }
+    }
+}
+/*--ハンバーガーメニュー(ヘッダー)--*/
+@media screen and (max-width: 917px){
+    header{
+        display: none;
+    }
+}
+@media screen and (min-width: 916px){
+    .nav-hbg{
+        display: none;
+    }
+    .nav-menu-ul{
+        display: none;
+    }
+}
+
+.nav-toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-right: 5%;
+        i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(189, 189, 189, 0.829);
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+        }
+    }
+
+.nav-toggle i:nth-child(1) {
+    top: 0;
+    }
+.nav-toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+.nav-toggle i:nth-child(3) {
+    bottom: 0;
+    }
+
+.nav-toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+.nav-toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
+.nav {
+    position: absolute;
+    position: fixed;
+    top: 59px;
+    z-index: 99999;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    height: auto;
+    width: 100%;
+    ul{
+        background-color: rgb(43, 48, 53);
+        margin: 0;
+        padding: 0;
+        height: 385px;
+        opacity: 0.9;
+        a{
+            color: white;
+        li{
+            text-align: center;
+            padding: 20px;
+            border-bottom: solid;
+            border-color: white;
+            border-width: 0.5px;
+            &:hover{
+                opacity: 0.3;
+                }
+            }
+        }
+    }
+    }
+.nav.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*--メイン画面--*/
+@media screen and(max-width:665px){
+    .main{
+        display: none;
+    }
+}
+@media screen and(min-width:666px){
+    .main-visual{
+        display: none;
+    }
+}
+@media screen and(max-width:664px){
+    .mainvisual{
+        position: relative;
+        }
+    .jump{
+        position: absolute;
+        z-index: 9999999;
+        top: 70%;
+        width: 100%;
+        text-align: center;
+    }
+    .jump-button{
+        width: 80px;
+        font-size: 30px;
+        color: rgb(216, 216, 216);
+        background-color:rgb(96, 139, 146);
+        border-radius: 100px;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    .jump-txt{
+        font-size: 14px;
+        color: rgba(199, 199, 199, 0.521);
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+        
+    .main-copy2{
+        z-index: 100;
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+        font-weight: normal;
+        color: white;
+    }
+    .mainvisual-image{
+        position: relative;
+        display: block;
+        height: 770px;
+        margin: 0;
+        padding: 0;
+        width:auto;
+        background-size: cover;
+        background-position: center;
+    }
+    .mainvisual-image li {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: none;
+        opacity: 0;
+        -webkit-animation: anime 30s linear 0s infinite ;
+        animation: anime 30s linear 0s infinite ;
+    }
+    .mainvisual-image li:nth-child(1) { 
+        background-image: url(/img/main/security01.jpg)
+    }
+    .mainvisual-image li:nth-child(2) {
+        background-image: url(/img/main/facility01.jpg);
+        -webkit-animation-delay: 5s;
+        animation-delay: 5s;
+    }
+    .mainvisual-image li:nth-child(3) {
+        background-image: url(/img/main/cleaning01.jfif);
+        -webkit-animation-delay: 10s;
+        animation-delay: 10s;
+    }
+    .mainvisual-image li:nth-child(4) {
+        background-image: url(/img/main/architecture01.jpg);
+        -webkit-animation-delay: 20s;
+        animation-delay: 20s;
+    }
+    .mainvisual-image li:nth-child(5) {
+        background-image: url(/img/main/reception01.jpg);
+        -webkit-animation-delay: 30s;
+        animation-delay: 30s;
+    }
+    @-webkit-keyframes anime { 
+        0% {
+            -webkit-animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        40% {
+                -webkit-animation-timing-function: ease-out;
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% { opacity: 0 }
+    }
+    @keyframes anime { 
+        0% {
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        40% {
+                animation-timing-function: ease-out;
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% { opacity: 0 }
+    }
+    
+}
+
+/*--強み--*/
+@media screen and(max-width:899px){
+    .strength-pcsize{
+        display: none;
+    }
+}
+@media screen and(max-width:665px){
+    .strength{
+        &-inner{
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14.5px;
+            }
+        }
+    }
+}
+
+/*--お知らせ--*/
+@media screen and(max-width:900px){
+    .news-pcsize{
+        display: none;
+    }
+}
+
+@media screen and(min-width:901px){
+    .news-ssize{
+        display: none;
+    }
+}
+
+@media screen and(max-width:899px){
+    .news-ssize{
+        &-ttl{
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        a{
+            align-items: center;
+            padding: 10px;
+        }
+        dl{
+            margin: 0 2%;
+        }
+        dt{
+            margin: 0;
+        }
+        dd{
+            margin: 0;
+            font-size: 13px;
+        }
+        p{
+            margin: 0 auto;
+            margin-top: 7%;
+        }
+    }
+    .news-txt{
+        padding-left: 10px;
+    }
+}
+
+/*--事業紹介--*/
+@media screen and(max-width:675px){
+    .project{
+        &-ttl{
+            padding: 20px 0;
+            font-size: 27px;
+        }
+        h3{
+            font-size: 24px;
+            left:5%;
+        }
+        &-subttl{
+            font-size: 8px;
+            margin-top: -3px;
+            left:5.5%;
+        }
+        &-p{
+            font-size: 12px;
+            padding-right: 5px;
+            left:5%;
+        }
+        &-cleaning{
+            height: 300px;
+        }
+        &-facility{
+            height: 300px;
+        }
+        &-security{
+            height: 300px;
+        }
+        &-architecture{
+            height: 300px;
+        }
+        &-reception{
+            height: 300px;
+        }
+
+    }
+}
+
+/*--受託実績--*/
+@media screen and(max-width:585px) {
+    .resulut{
+        &-ttl{
+            font-size: 27px;
+        }
+        figure{
+            img{
+                width: 490px;
+            }
+        }
+    }
+}
+@media screen and(max-width:380px) {
+    .resulut{
+        &-ttl{
+            font-size: 27px;
+        }
+        figure{
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+/*--受託実績ボタン--*/
+@media screen and(max-width:665px){
+    .resulut-inner{
+        p{
+            margin: 0 auto;
+            margin-top: 20%;
+        }
+    }
+}
+
+/*--会社情報--*/
+@media screen and(max-width:570px){
+    .info{
+        &-ttl{
+            font-size: 27px;
+        }
+        th{
+            display: block;
+            padding: 5px;
+            margin: 0 5%;
+        }
+        td{
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 0 5%;
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+    td.info-last{
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/*--お問い合わせ--*/
+@media screen and(max-width:480px){
+    .contact-ttl{
+        font-size: 27px;
+    }
+    .contact{
+        input.inputs{
+        width: 315px;
+        }
+        .item{
+            select{
+            width: 335px;
+            }
+        }
+        .item{
+            textarea{
+                width: 315px;
+            }
+        }
+    }
+}
+
+/*--フッター--*/
+@media screen and(max-width:720px) {
+    .footer-nav{
+        ul{
+            display: block;
+            text-align: center;
+            margin: 0;
+            padding: 3% 0;
+            font-size: 8px;
+        }
+    }
+}

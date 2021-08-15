@@ -1,0 +1,11 @@
+/*--画面に要素が表示されたら適用させるアニメーション--*/
+.fadein {
+    opacity : 0;
+    transform : translate(0, 100px);
+    transition : all 1s;
+    }
+
+.fadein.active{
+    opacity : 1;
+    transform : translate(0, 0);
+    }
