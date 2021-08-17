@@ -181,7 +181,6 @@
   .jump-txt {
     font-size: 14px;
     color: rgba(199, 199, 199, 0.521);
-    text-align: center;
   }
   .jump-txt:hover {
     opacity: 0.5;
