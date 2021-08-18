@@ -397,6 +397,9 @@
   .resulut-ttl {
     font-size: 27px;
   }
+  figure{
+    margin:0;
+  }
   .resulut figure img {
     width: 370px;
     margin: 0;
