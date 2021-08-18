@@ -387,6 +387,9 @@
   .resulut-ttl {
     font-size: 27px;
   }
+  figure{
+    margin: 0;
+  }
   .resulut figure img {
     width: 490px;
   }
@@ -395,6 +398,9 @@
 @media screen and (max-width: 380px) {
   .resulut-ttl {
     font-size: 27px;
+  }
+  figure{
+    margin: 0;
   }
   .resulut figure img {
     width: 365px;
