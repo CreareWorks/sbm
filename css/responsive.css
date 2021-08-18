@@ -286,7 +286,7 @@
 }
 
 /*--強み--*/
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 666px) {
   .strength-pcsize {
     display: none;
   }
@@ -300,6 +300,13 @@
     font-size: 14.5px;
   }
 }
+
+@media screen and (min-width: 665px) {
+  .s-size {
+    display: none;
+  }
+}
+
 
 /*--お知らせ--*/
 @media screen and (max-width: 900px) {
