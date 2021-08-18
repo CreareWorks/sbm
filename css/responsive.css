@@ -286,16 +286,6 @@
 }
 
 /*--強み--*/
-@media screen and (max-width: 666px) {
-  .strength-pcsize {
-    display: none;
-  }
-}
-@media screen and (min-width: 667px) {
-  .s-size {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 665px) {
   .strength-inner h2 {
