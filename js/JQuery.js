@@ -5,7 +5,7 @@ $(function(){
     //ナビのクリックしたら自動スクロール
     $('a').click(function(){
         let id = $(this).attr('href');
-        let position = $(id).offset().top;
+        let position = $(id).offset().top - 60;
         $('html, body').animate({
         'scrollTop': position
         },500);
