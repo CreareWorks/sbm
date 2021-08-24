@@ -4,8 +4,8 @@ $(function(){
     
     //ナビのクリックしたら自動スクロール
     $('a').click(function(){
-        var id = $(this).attr('href');
-        var position = $(id).offset().top;
+        let id = $(this).attr('href');
+        let position = $(id).offset().top;
         $('html, body').animate({
         'scrollTop': position
         },500);
@@ -14,9 +14,9 @@ $(function(){
     //要素が画面に表示されたら適用(スライドアップ)
     $(window).scroll(function (){
         $('.fadein').each(function(){
-            var position = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
+            let position = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
             if (scroll > position - windowHeight + 200){
             $(this).addClass('active');
             }
