@@ -1,4 +1,4 @@
-【使用言語】HTML,CSS(sassを使用),JQuey,PHP(Githubではアップロードしてません。)
+【使用言語】HTML,CSS(sassを使用),JQuey,PHP,MariaDB(GithubではMariaDBと連携したPHPファイルはアップロードしてません。)
 【使用プラグイン】slick(カルーセルスライダーに使用。)
 ポートフォリオとして制作した架空のビルメン会社のサイトです。
 お問い合わせフォームのPHPを使用した下層サイトも用意してありますが、
